@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    width: 1400px;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -177,7 +176,7 @@ a {
     height: 270px;
 }
 .services__card-name {
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 60px;
     letter-spacing: -0.027em;
 }
