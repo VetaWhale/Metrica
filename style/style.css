@@ -69,7 +69,6 @@ a {
     color: var(--dark-color);
     margin-left: 57px;
 }
-.active,
 .menu__nav a:hover{
     opacity: 0.5;
     padding-bottom: 2px;
@@ -240,9 +239,6 @@ a {
 }
 .footer__nav a {
     color: var(--white-color);
-}
-.footer__nav_active {
-    opacity: 0.5;
 }
 .footer__nav a:hover {
     opacity: 0.5;
