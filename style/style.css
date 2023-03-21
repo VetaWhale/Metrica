@@ -172,8 +172,12 @@ button {
         width: 96px;
         height: 16px;
     }
+    .menu__info {
+        margin-top: 37px;
+    }
     .menu__info-img {
-        height: 350px;
+        margin-top: 24px;
+        height: 304px;
     }
     .menu__info-h1 {
         max-width: 335px;
@@ -225,10 +229,11 @@ button {
         margin-top: 80px;
     }
     .info__text {
+        margin-top: 20px;
         width: 100%;
     }
     .info__button {
-        padding: 14,5px 27px;
+        padding: 11px 27px;
         font-size: 16px;
     }
 }
@@ -269,7 +274,6 @@ button {
     background-color: var(--white-color);
     border: 1px solid var(--accent-color);
     border-radius: 5px;
-    padding: 56px auto;
     letter-spacing: -0.03em;
 }
 .projects__open-button:hover {
@@ -300,6 +304,14 @@ button {
     .projects {
         margin-top: 80px;
     }
+    .projects__card {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    .projects__card-name {
+        margin-top: 17px;
+        margin-bottom: 11px;
+    }
     .projects__card-img {
         height: 250px;
     }
@@ -311,9 +323,9 @@ button {
         margin-top: 60px;
     }
     .projects__open-button {
-        padding: 37px auto;
         font-size: 22px;
         line-height: 30px;
+        height: 100px;
     }
 }
 /* Стили для блока услуги */
