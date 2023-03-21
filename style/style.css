@@ -96,13 +96,15 @@ button {
 @media only screen and (max-width: 1199px) {
     .container {
         width: 100%;
-        margin: 0 15px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
     
 }
 @media only screen and (max-width: 767px) {
     .container {
-        margin: 0 12px 0 13px;
+        margin-left: 13px;
+        margin-right: 12px;
     }
 }
 /* Стили для блока шапки сайта */
@@ -161,6 +163,9 @@ button {
     .menu__info-h1 {
         max-width: 808px;
     }
+    .menu__info-text {
+        bottom: 30px;
+    }
 }
 @media only screen and (max-width: 767px) {
     .menu__logo {
@@ -174,6 +179,8 @@ button {
         max-width: 335px;
     }
     .menu__info-text {
+        left: 15px;
+        bottom: 15px;
         max-width: 312px;
     }
 }
@@ -189,6 +196,7 @@ button {
     width: 1051px;
 }
 .info__button {
+    display: block;
     padding: 20px 40px;
     margin-top: 30px;
     font-size: 20px;
@@ -205,10 +213,24 @@ button {
 }
 /* Адаптив для блока информации */
 @media only screen and (max-width: 1199px) {
-    
+    .info__tag {
+        margin-top: 120px;
+    }
+    .info__text {
+        max-width: 690px;
+    }
 }
 @media only screen and (max-width: 767px) {
-    
+    .info__tag {
+        margin-top: 80px;
+    }
+    .info__text {
+        width: 100%;
+    }
+    .info__button {
+        padding: 14,5px 27px;
+        font-size: 16px;
+    }
 }
 /* Стили для блока проекты */
 .projects {
@@ -219,7 +241,8 @@ button {
     margin-bottom: 58px;
 }
 .projects__card-img {
-    width: 1150px;
+    object-fit: cover;
+    width: 100%;
     height: 450px;
 }
 .projects__card-name {
@@ -240,7 +263,7 @@ button {
     margin-top: 90px;
 }
 .projects__open-button {
-    width: 1150px;
+    width: 100%;
     height: 153px;
     color: var(--accent-color);
     background-color: var(--white-color);
@@ -256,10 +279,42 @@ button {
 }
 /* Адаптив для блока проекты */
 @media only screen and (max-width: 1199px) {
-    
+    .projects {
+        margin-top: 120px;
+    }
+    .projects__card {
+        margin-bottom: 48px;
+    }
+    .projects__card-name {
+        margin-bottom: 10px;
+    }
+    .projects__open {
+        margin-top: 102px;
+    }
+    .projects__open-button {
+        font-size: 30px;
+        line-height: 41px;
+    }
 }
 @media only screen and (max-width: 767px) {
-    
+    .projects {
+        margin-top: 80px;
+    }
+    .projects__card-img {
+        height: 250px;
+    }
+    .projects__card-link {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .projects__open {
+        margin-top: 60px;
+    }
+    .projects__open-button {
+        padding: 37px auto;
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 /* Стили для блока услуги */
 .services {
