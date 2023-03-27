@@ -3,6 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -50,8 +51,13 @@ button {
     font-weight: 400;
     letter-spacing: -0.03em;
 }
-
-/* Адаптив для шрифтов */
+.button {
+    width: 100%;
+    height: 153px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+/* Адаптив для шрифтов и больших кнопок*/
 @media only screen and (max-width: 1199px) {
     .text-h1 {
         font-size: 50px;
@@ -63,6 +69,10 @@ button {
     .text-h3 {
         font-size: 25px;
         line-height: 34px;
+    }
+    .button {
+        font-size: 30px;
+        line-height: 41px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -86,25 +96,32 @@ button {
         font-size: 14px;
         line-height: 19px;
     }
+    .button {
+        font-size: 22px;
+        line-height: 30px;
+        height: 100px;
+    }
 }
 
 /* Стили и адаптив для контейнера */
 .container {
-    width: 1150px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 @media only screen and (max-width: 1199px) {
     .container {
-        width: 100%;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
 }
 @media only screen and (max-width: 767px) {
     .container {
-        margin-left: 13px;
-        margin-right: 12px;
+        margin: 0 auto;
+        padding-left: 13px;
+        padding-right: 12px;
     }
 }
 /* Стили для блока шапки сайта */
@@ -119,6 +136,9 @@ button {
 .menu__logo {
     width: 127px;
     height: 21px;
+}
+.menu__logo img {
+    box-sizing: border-box;
 }
 .menu__nav {
     
@@ -144,7 +164,7 @@ button {
     background-image: url("../img/Rectangle\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    max-width: 1150px;
     height: 500px;
     position: relative;
 }
@@ -158,6 +178,7 @@ button {
 /* Адаптив для блока шапки профиля */
 @media only screen and (max-width: 1199px) {
     .menu__info-img {
+        width: 100%;
         height: 400px;
     }
     .menu__info-h1 {
@@ -268,13 +289,8 @@ button {
     margin-top: 90px;
 }
 .projects__open-button {
-    width: 100%;
-    height: 153px;
     color: var(--accent-color);
     background-color: var(--white-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    letter-spacing: -0.03em;
 }
 .projects__open-button:hover {
     color: var(--white-color);
@@ -294,10 +310,6 @@ button {
     }
     .projects__open {
         margin-top: 102px;
-    }
-    .projects__open-button {
-        font-size: 30px;
-        line-height: 41px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -322,11 +334,6 @@ button {
     .projects__open {
         margin-top: 60px;
     }
-    .projects__open-button {
-        font-size: 22px;
-        line-height: 30px;
-        height: 100px;
-    }
 }
 /* Стили для блока услуги */
 .services {
@@ -339,53 +346,221 @@ button {
 .services__tag {
     margin-bottom: 32px;
 }
+.services__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 11px;
+    row-gap: 42px;
+}
 .services__card {
+    position: relative;
+    width: 100%;
 }
 .services__card-img {
-    width: 1150px;
-    height: 270px;
+    margin-bottom: 25px;
 }
-.services__card-name {
-    margin-top: 15px;
-    margin-bottom: 60px;
-    letter-spacing: -0.027em;
+.services__card-price {
+    padding: 5px 21px;
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 30px;
 }
+.services__card-title {
+}
+.services__orden {
+    margin-top: 55px;
+}
+.services__orden-button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.services__orden-button:hover {
+    cursor: pointer;
+}
+
 /* Адаптив для блока услуги */
 @media only screen and (max-width: 1199px) {
-    
+    .services {
+        margin-top: 105px;
+    }
+    .services__cards-grid {
+        row-gap: 83px;
+    }
+    .services__card-img {
+        margin-bottom: 16px;
+    }
+    .services__card-img img{
+        max-width: 100%;
+    }
+    .services__card-title p:nth-child(3) {
+        font-size: 30px;
+        line-height: 41px;;
+    }
 }
 @media only screen and (max-width: 767px) {
-    
+    .services__cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 46px;
+    }
+    .services__card {
+        margin-bottom: 20px;
+    }
+    .services__card-img {
+        margin-bottom: 10px;
+    }
+    .services__card-img img {
+        width: 100%;
+    }
+    .services {
+        margin-top: 146px;
+        padding-top: 80px;
+        padding-bottom: 79px;
+    }
+    .services__tag {
+        padding-left: 3px;
+        margin-bottom: 18px;
+    }
+    .services__card-price {
+        padding: 5px 24px;
+        font-size: 14px;
+        line-height: 19px;
+        top: 23px;
+        left: 24px;
+    }
+    .services__orden {
+        margin-top: 45px;
+    }
+}
+/* Стили для блока отзывы */
+.reviews {
+    padding-top: 214px;
+    padding-bottom: 156px;
+}
+.reviews__tag {
+    margin-bottom: 30px;
+}
+.reviews__cards-grid {
+    display: grid;
+    grid-template-columns: 528px 505px;
+    grid-auto-flow: dense;
+    gap: 80px 50px;
+}
+.reviews__card {
+}
+.reviews__card:nth-child(3) {
+    grid-column: 2 span;
+    max-width: 861px;
+}
+.reviews__card-title {
+    margin-bottom: 14px;
+}
+.reviews__card-text {
+    font-size: 22px;
+    line-height: 30px;
+}
+/* Адаптив для блока отзывы */
+@media only screen and (max-width: 1199px) {
+    .reviews {
+        padding-top: 117px;
+        padding-bottom: 120px;
+    }
+    .reviews__cards-grid {
+        gap: 80px 10px;
+    }
+    .reviews__card-title {
+        margin-bottom: 25px;
+    }
+    .reviews__card-text {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .reviews__tag {
+        margin-bottom: 22px;
+    }
+    .reviews__cards-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews__card-title {
+        margin-bottom: 10px;
+    }
+    .reviews__card-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 /* Стили для блока галереи */
-.show-project {
+.gallery {
     height: 717px;
-    background-image: url("../img/project.jpg");
+    background-image: url("../img/gallery-project1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     position: relative;
 }
-.show-project__text {
+.gallery__title {
     position: absolute;
     color: var(--white-color);
     bottom: 60px;
     max-width: 443px;
 }
+.gallery__tag {
+    position: absolute;
+    top: 60px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+}
+.gallery__menu-nav {
+    display: flex;
+    position: absolute;
+    bottom: 165px;
+}
+.gallery__arrow-left {
+    margin-right: 34px;
+}
+.gallery__arrow-right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.gallery__arrow-left:hover,
+.gallery__arrow-right:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 /* Адаптив для блока галереи */
 @media only screen and (max-width: 1199px) {
-    
+    .gallery {
+        height: 536px;
+    }
 }
 @media only screen and (max-width: 767px) {
-    
+    .gallery {
+        height: 375px;
+    }
+    .gallery__menu-nav {
+        
+    }
+    .gallery__arrow-left {
+        left: 20%;
+        margin: 0;
+    }
+    .gallery__arrow-right {
+        left: 80%;
+    }
 }
 /* Стили для блока контакты */
 .contacts {
     padding-top: 150px;
     padding-bottom: 150px;
-}
-.contacts__icon {
-    margin-left: -5px;
 }
 .contacts__tag {
     margin-top: 10px;
@@ -394,7 +569,17 @@ button {
     margin-top: 32px;
     margin-bottom: 30px;
     color: var(--dark-color);
-    letter-spacing: -0.02em;
+    position: relative;
+}
+.contacts__number a::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/ic_outline-phone-iphone.svg);
+    top: -50px;
+    left: -8px;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
 }
 .contacts__email {
     color: var(--dark-color);
