@@ -1,0 +1,102 @@
+/* Стили для блока услуги */
+.services {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    margin-top: 150px;
+    padding-top: 151px;
+    padding-bottom: 87px;
+}
+.services__tag {
+    margin-bottom: 32px;
+}
+.services__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 11px;
+    row-gap: 42px;
+}
+.services__card {
+    position: relative;
+    width: 100%;
+}
+.services__card-img {
+    margin-bottom: 25px;
+}
+.services__card-price {
+    padding: 5px 21px;
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 30px;
+}
+.services__card-title {
+}
+.services__orden {
+    margin-top: 55px;
+}
+.services__orden-button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.services__orden-button:hover {
+    cursor: pointer;
+}
+
+/* Адаптив для блока услуги */
+@media only screen and (max-width: 1199px) {
+    .services {
+        margin-top: 105px;
+    }
+    .services__cards-grid {
+        row-gap: 83px;
+    }
+    .services__card-img {
+        margin-bottom: 16px;
+    }
+    .services__card-img img{
+        max-width: 100%;
+    }
+    .services__card-title p:nth-child(3) {
+        font-size: 30px;
+        line-height: 41px;;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .services__cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 46px;
+    }
+    .services__card {
+        margin-bottom: 20px;
+    }
+    .services__card-img {
+        margin-bottom: 10px;
+    }
+    .services__card-img img {
+        width: 100%;
+    }
+    .services {
+        margin-top: 146px;
+        padding-top: 80px;
+        padding-bottom: 79px;
+    }
+    .services__tag {
+        padding-left: 3px;
+        margin-bottom: 18px;
+    }
+    .services__card-price {
+        padding: 5px 24px;
+        font-size: 14px;
+        line-height: 19px;
+        top: 23px;
+        left: 24px;
+    }
+    .services__orden {
+        margin-top: 45px;
+    }
+}

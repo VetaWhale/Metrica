@@ -1,0 +1,60 @@
+/* Стили для блока галереи */
+.gallery {
+    height: 717px;
+    background-image: url("../img/gallery-project1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.gallery__title {
+    position: absolute;
+    color: var(--white-color);
+    bottom: 60px;
+    max-width: 443px;
+}
+.gallery__tag {
+    position: absolute;
+    top: 60px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+}
+.gallery__menu-nav {
+    display: flex;
+    position: absolute;
+    bottom: 165px;
+}
+.gallery__arrow-left {
+    margin-right: 34px;
+}
+.gallery__arrow-right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.gallery__arrow-left:hover,
+.gallery__arrow-right:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Адаптив для блока галереи */
+@media only screen and (max-width: 1199px) {
+    .gallery {
+        height: 536px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .gallery {
+        height: 375px;
+    }
+    .gallery__menu-nav {
+        
+    }
+    .gallery__arrow-left {
+        left: 20%;
+        margin: 0;
+    }
+    .gallery__arrow-right {
+        left: 80%;
+    }
+}

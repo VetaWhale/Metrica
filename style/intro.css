@@ -1,0 +1,49 @@
+/* Стили для блока информации */
+.intro {
+    
+}
+.intro__tag {
+    margin-top: 150px;
+}
+.intro__text {
+    margin-top: 30px;
+    width: 1051px;
+}
+.intro__button {
+    display: block;
+    padding: 20px 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+.intro__button:hover {
+    background-color: var(--white-color);
+    color: var(--accent-color);
+    cursor: pointer;
+}
+/* Адаптив для блока информации */
+@media only screen and (max-width: 1199px) {
+    .info__tag {
+        margin-top: 120px;
+    }
+    .info__text {
+        max-width: 690px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .info__tag {
+        margin-top: 80px;
+    }
+    .info__text {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .info__button {
+        padding: 11px 27px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,42 @@
+/* Стили для блока контакты */
+.contacts {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.contacts__tag {
+    margin-top: 10px;
+}
+.contacts__number {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+    position: relative;
+}
+.contacts__number a::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/ic_outline-phone-iphone.svg);
+    top: -50px;
+    left: -8px;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.contacts__email {
+    color: var(--dark-color);
+    opacity: 0.5;
+}
+.line {
+    margin-top: 7px;
+    width: 410px;
+    height: 2px;
+    background-color: var(--dark-color);
+    opacity: 0.5;
+}
+/* Адаптив для блока контакты */
+@media only screen and (max-width: 1199px) {
+    
+}
+@media only screen and (max-width: 767px) {
+    
+}

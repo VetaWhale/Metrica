@@ -1,0 +1,60 @@
+/* Стили для блока отзывы */
+.reviews {
+    padding-top: 214px;
+    padding-bottom: 156px;
+}
+.reviews__tag {
+    margin-bottom: 30px;
+}
+.reviews__cards-grid {
+    display: grid;
+    grid-template-columns: 528px 505px;
+    grid-auto-flow: dense;
+    gap: 80px 50px;
+}
+.reviews__card {
+}
+.reviews__card:nth-child(3) {
+    grid-column: 2 span;
+    max-width: 861px;
+}
+.reviews__card-title {
+    margin-bottom: 14px;
+}
+.reviews__card-text {
+    font-size: 22px;
+    line-height: 30px;
+}
+/* Адаптив для блока отзывы */
+@media only screen and (max-width: 1199px) {
+    .reviews {
+        padding-top: 117px;
+        padding-bottom: 120px;
+    }
+    .reviews__cards-grid {
+        gap: 80px 10px;
+    }
+    .reviews__card-title {
+        margin-bottom: 25px;
+    }
+    .reviews__card-text {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .reviews__tag {
+        margin-bottom: 22px;
+    }
+    .reviews__cards-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews__card-title {
+        margin-bottom: 10px;
+    }
+    .reviews__card-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
