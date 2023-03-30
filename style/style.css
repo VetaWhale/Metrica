@@ -1,11 +1,11 @@
-@import "/style/header.css";
-@import "/style/intro.css";
-@import "/style/projects.css";
-@import "/style/services.css";
-@import "/style/reviews.css";
-@import "/style/gallery.css";
-@import "/style/contacts.css";
-@import "/style/footer.css";
+@import url('/style/header.css');
+@import url('/style/intro.css');
+@import url('/style/projects.css');
+@import url('/style/services.css');
+@import url('/style/reviews.css');
+@import url('/style/gallery.css');
+@import url('/style/contacts.css');
+@import url('/style/footer.css');
 
 /* Общие настройки */
 html {
