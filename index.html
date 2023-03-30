@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-link.png" type="image/jpg">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,17 +50,53 @@
         <div class="container">
             <h2 class="tag">Проекты</h2>
             <div class="projects__card">
-                <img class="projects__card-img" src="img/project1.jpg" alt="Проект 1">
+                <picture>
+                    <source
+                    media="(max-width: 500px)"
+                    srcset="img/project1_mobile.jpg"
+                    />
+                    <source
+                    media="(max-width: 1199px)"
+                    srcset="img/project1_tablet.jpg"
+                    />
+                    <img class="projects__card-img"
+                    src="img/project1.jpg" 
+                    alt="Проект 1">
+                </picture>
                 <p class="text-h3 projects__card-name">ЖК Правобережный — 112 м² — 2023</p>
                 <a class="projects__card-link" href="">Подробнее &rarr;</a>
             </div>
             <div class="projects__card">
-                <img class="projects__card-img" src="img/project2.jpg" alt="Проект 2">
+                <picture>
+                    <source
+                    media="(max-width: 500px)"
+                    srcset="img/project2_mobile.jpg"
+                    />
+                    <source
+                    media="(max-width: 1199px)"
+                    srcset="img/project2_tablet.jpg"
+                    />
+                    <img class="projects__card-img" 
+                    src="img/project2.jpg" 
+                    alt="Проект 2">
+                </picture>
                 <p class="text-h3 projects__card-name">ЖК Норвежский парк — 75 М² — 2023</p>
                 <a class="projects__card-link" href="">Подробнее &rarr;</a>
             </div>
             <div class="projects__card">
-                <img class="projects__card-img" src="img/project3.jpg" alt="Проект 3">
+                <picture>
+                    <source
+                    media="(max-width: 500px)"
+                    srcset="img/project3_mobile.jpg"
+                    />
+                    <source
+                    media="(max-width: 1199px)"
+                    srcset="img/project3_tablet.jpg"
+                    />
+                    <img class="projects__card-img" 
+                    src="img/project3.jpg" 
+                    alt="Проект 3">
+                </picture>
                 <p class="text-h3 projects__card-name">ЖК Сосновские озера — 94 М² — 2022</p>
                 <a class="projects__card-link" href="">Подробнее &rarr;</a>
             </div>
@@ -106,12 +143,12 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
-        <div class="container">
+    <div class="container">
+        <section class="reviews">
             <h2 class="reviews__tag tag">Отзывы</h2>
             <div class="reviews__cards-grid">
                 <div class="reviews__card">
-                    <p class="reviews__card-title text-h2">Ксения, проект 65 кв.м.</p>
+                    <p class="reviews__card-title">Ксения, проект 65 кв.м.</p>
                     <p class="reviews__card-text">Хочу искренне поблагодарить Вас за работу, проделанную на высоком
                         уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать
                         пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не
@@ -123,7 +160,7 @@
                     </p>
                 </div>
                 <div class="reviews__card">
-                    <p class="reviews__card-title text-h2">Регина, проект 89 кв.м.</p>
+                    <p class="reviews__card-title">Регина, проект 89 кв.м.</p>
                     <p class="reviews__card-text">Спасибо большое за такой классный проект! Все стильно, круто,
                         продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в
                         поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного
@@ -134,7 +171,7 @@
                     </p>
                 </div>
                 <div class="reviews__card">
-                    <p class="reviews__card-title text-h2">Яна, проект 120 кв.м.</p>
+                    <p class="reviews__card-title">Яна, проект 120 кв.м.</p>
                     <p class="reviews__card-text">Хотелось бы сказать большое спасибо за проделанную работу! В задачу
                         Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при
                         этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались
@@ -147,8 +184,8 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!--
     <section class="gallery">
         <div class="container">

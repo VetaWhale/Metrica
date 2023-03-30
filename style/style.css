@@ -117,11 +117,10 @@ button {
 .container {
     max-width: 1150px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 @media only screen and (max-width: 1199px) {
     .container {
-        margin: 0 auto;
+        width: 100%;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -129,7 +128,6 @@ button {
 }
 @media only screen and (max-width: 767px) {
     .container {
-        margin: 0 auto;
         padding-left: 13px;
         padding-right: 12px;
     }

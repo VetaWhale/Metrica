@@ -1,25 +1,27 @@
 /* Стили для блока отзывы */
 .reviews {
-    padding-top: 214px;
+    padding-top: 150px;
     padding-bottom: 156px;
 }
 .reviews__tag {
     margin-bottom: 30px;
 }
 .reviews__cards-grid {
-    display: grid;
-    grid-template-columns: 528px 505px;
-    grid-auto-flow: dense;
-    gap: 80px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
 }
 .reviews__card {
+    width: calc(50% - 25px);
 }
-.reviews__card:nth-child(3) {
-    grid-column: 2 span;
-    max-width: 861px;
+.reviews__card:last-child {
+    width: calc(50% + 25%);
 }
 .reviews__card-title {
     margin-bottom: 14px;
+    font-size: 45px;
+    line-height: 61px;
 }
 .reviews__card-text {
     font-size: 22px;
@@ -32,10 +34,15 @@
         padding-bottom: 120px;
     }
     .reviews__cards-grid {
-        gap: 80px 10px;
+        row-gap: 52px;
+    }
+    .reviews__card {
+        width: calc(50% - 5px);
     }
     .reviews__card-title {
         margin-bottom: 25px;
+        font-size: 35px;
+        line-height: 48px;
     }
     .reviews__card-text {
         font-size: 20px;
@@ -43,15 +50,27 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .reviews {
+        padding-top: 81px;
+        padding-bottom: 80px;
+    }
     .reviews__tag {
         margin-bottom: 22px;
     }
     .reviews__cards-grid {
-        display: flex;
-        flex-direction: column;
+        row-gap: 74px;
+    }
+    .reviews__card {
+        width: 100%;
+    }
+    .reviews__card:last-child {
+        width: 100%;
+        margin-top: 6px;
     }
     .reviews__card-title {
         margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
     }
     .reviews__card-text {
         font-size: 16px;

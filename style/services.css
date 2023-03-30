@@ -4,30 +4,29 @@
     color: var(--white-color);
     margin-top: 150px;
     padding-top: 151px;
-    padding-bottom: 87px;
+    padding-bottom: 150px;
 }
 .services__tag {
     margin-bottom: 32px;
 }
 .services__cards-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 11px;
-    row-gap: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 47px;
 }
 .services__card {
     position: relative;
-    width: 100%;
+    width: calc(50% - 5px);
 }
 .services__card-img {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
 }
 .services__card-price {
     padding: 5px 21px;
     position: absolute;
-    top: 31px;
-    left: 30px;
+    top: 29px;
+    left: 29px;
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
     border-radius: 5px;
@@ -35,9 +34,10 @@
     line-height: 30px;
 }
 .services__card-title {
+    max-width: 340px;
 }
 .services__orden {
-    margin-top: 55px;
+    margin-top: 102px;
 }
 .services__orden-button {
     color: var(--white-color);
@@ -51,6 +51,7 @@
 @media only screen and (max-width: 1199px) {
     .services {
         margin-top: 105px;
+        padding-bottom: 120px;
     }
     .services__cards-grid {
         row-gap: 83px;
@@ -61,29 +62,28 @@
     .services__card-img img{
         max-width: 100%;
     }
-    .services__card-title p:nth-child(3) {
-        font-size: 30px;
-        line-height: 41px;;
+    .services__orden {
+        margin-top: 85px;
     }
 }
 @media only screen and (max-width: 767px) {
+    .services {
+        margin-top: 146px;
+        padding-top: 80px;
+        padding-bottom: 77px;
+    }
     .services__cards-grid {
-        grid-template-columns: repeat(1, 1fr);
         row-gap: 46px;
     }
     .services__card {
         margin-bottom: 20px;
+        width: 100%;
     }
     .services__card-img {
         margin-bottom: 10px;
     }
     .services__card-img img {
         width: 100%;
-    }
-    .services {
-        margin-top: 146px;
-        padding-top: 80px;
-        padding-bottom: 79px;
     }
     .services__tag {
         padding-left: 3px;
