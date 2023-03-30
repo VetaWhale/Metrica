@@ -1,5 +1,5 @@
-@import "/style/header.css";
-@import "/style/intro.css";
+@import "style/header.css";
+@import "style/intro.css";
 @import "/style/projects.css";
 @import "/style/services.css";
 @import "/style/reviews.css";
