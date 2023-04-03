@@ -1,7 +1,7 @@
 /* Стили для блока отзывы */
 .reviews {
     padding-top: 150px;
-    padding-bottom: 156px;
+    padding-bottom: 158px;
 }
 .reviews__tag {
     margin-bottom: 30px;
@@ -15,7 +15,7 @@
 .reviews__card {
     width: calc(50% - 25px);
 }
-.reviews__card:last-child {
+.reviews__card:last-child:nth-child(2n + 1) {
     width: calc(50% + 25%);
 }
 .reviews__card-title {
