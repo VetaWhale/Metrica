@@ -1,57 +1,98 @@
 /* Стили для блока контакты */
 .contacts {
-    padding-top: 150px;
-    padding-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .contacts__tag {
-    margin-top: 10px;
-    margin-bottom: 74px;
+  margin-top: 10px;
+  margin-bottom: 74px;
 }
 .contacts__list {
-    display: flex;
-    gap: 104px;
+  display: flex;
+  gap: 104px;
 }
 .contacts__number {
-    margin-bottom: 30px;
-    color: var(--dark-color);
-    position: relative;
+  margin-bottom: 30px;
+  color: var(--dark-color);
+  position: relative;
 }
-.contacts__number::before{
-    content: '';
-    position: absolute;
-    background-image: url(../img/ic_outline-phone-iphone.svg);
-    background-repeat: no-repeat;
-    top: -50px;
-    left: -8px;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
+.contacts__number::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/ic_outline-phone-iphone.svg);
+  display: block;
+  top: -27px;
+  width: 22px;
+  height: 24px;
 }
 .contacts__email {
-    color: var(--dark-color);
-    opacity: 0.5;
+  color: var(--dark-color);
+  opacity: 0.5;
 }
 .line {
-    margin-top: 7px;
-    width: 410px;
-    height: 2px;
-    background-color: var(--dark-color);
-    opacity: 0.5;
+  margin-top: 7px;
+  width: 436px;
+  height: 2px;
+  background-color: var(--dark-color);
+  opacity: 0.5;
 }
-.contacts__email::before{
-    content: '';
-    position: absolute;
-    background-image: url(../img/icon-email.svg);
-    top: -50px;
-    left: -108px;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
+.contacts__email::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-email.svg);
+  display: block;
+  top: -19px;
+  width: 26px;
+  height: 26px;
+}
+.contacts__number,
+.contacts__email {
+  font-size: 60px;
+  line-height: 60px;
 }
 /* Адаптив для блока контакты */
 @media only screen and (max-width: 1199px) {
-    
+  .contacts {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  .contacts__list {
+    gap: 114px;
+  }
+  .line {
+    width: 325px;
+  }
+  .contacts__number,
+  .contacts__email {
+    font-size: 45px;
+  }
 }
 @media only screen and (max-width: 767px) {
-    
+  .contacts {
+    padding-top: 80px;
+  }
+  .contacts__tag {
+    margin-bottom: 58px;
+  }
+  .contacts__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .line {
+    display: none;
+  }
+  .contacts__email {
+    opacity: 1;
+  }
+  .contacts__number,
+  .contacts__email {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .contacts__number::before {
+    top: -20px;
+  }
+  .contacts__email::before {
+    top: -23px;
+  }
 }
