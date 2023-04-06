@@ -5,17 +5,22 @@
 }
 .contacts__tag {
     margin-top: 10px;
+    margin-bottom: 74px;
+}
+.contacts__list {
+    display: flex;
+    gap: 104px;
 }
 .contacts__number {
-    margin-top: 32px;
     margin-bottom: 30px;
     color: var(--dark-color);
     position: relative;
 }
-.contacts__number a::before{
+.contacts__number::before{
     content: '';
     position: absolute;
     background-image: url(../img/ic_outline-phone-iphone.svg);
+    background-repeat: no-repeat;
     top: -50px;
     left: -8px;
     background-size: cover;
@@ -32,6 +37,16 @@
     height: 2px;
     background-color: var(--dark-color);
     opacity: 0.5;
+}
+.contacts__email::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/icon-email.svg);
+    top: -50px;
+    left: -108px;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
 }
 /* Адаптив для блока контакты */
 @media only screen and (max-width: 1199px) {
