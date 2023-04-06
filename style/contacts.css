@@ -16,10 +16,11 @@
   color: var(--dark-color);
   position: relative;
 }
-.contacts__number::before {
+.contacts__number:before {
   content: "";
   position: absolute;
   background-image: url(../img/ic_outline-phone-iphone.svg);
+  background-repeat: no-repeat;
   display: block;
   top: -27px;
   width: 22px;
@@ -36,10 +37,11 @@
   background-color: var(--dark-color);
   opacity: 0.5;
 }
-.contacts__email::before {
+.contacts__email:before {
   content: "";
   position: absolute;
   background-image: url(../img/icon-email.svg);
+  background-repeat: no-repeat;
   display: block;
   top: -19px;
   width: 26px;
