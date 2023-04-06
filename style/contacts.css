@@ -43,7 +43,7 @@
   background-image: url(../img/icon-email.svg);
   background-repeat: no-repeat;
   display: block;
-  top: -19px;
+  margin-top: -19px;
   width: 26px;
   height: 26px;
 }
@@ -79,6 +79,7 @@
   .contacts__list {
     flex-wrap: wrap;
     flex-direction: row;
+    row-gap: 58px;
   }
   .line {
     display: none;
@@ -95,6 +96,6 @@
     top: -20px;
   }
   .contacts__email::before {
-    top: -23px;
+    margin-top: -23px;
   }
 }
