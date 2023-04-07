@@ -22,7 +22,6 @@
 }
 .footer__nav a:hover {
     opacity: 0.5;
-    text-decoration: underline;
 }
 .footer__text {
     margin-top: 87px;
