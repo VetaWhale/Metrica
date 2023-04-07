@@ -37,9 +37,13 @@
     .footer__nav {
         gap: 30px;
     }
+    .footer__nav a {
+        font-size: 12px;
+        line-height: 16px;
+    }
     .footer__content {
         padding-top: 30px;
-        padding-bottom: 26px;
+        padding-bottom: 22px;
     }
     .footer__text {
         margin-top: 41px;
