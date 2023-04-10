@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <!-- <div class="menu">
+           <!-- <div class="menu">
                 <div class="menu__logo">
                     <img src="img/Метрика.svg" alt="">
                 </div>
@@ -26,7 +26,21 @@
                     <a href="#services">Услуги</a>
                     <a href="#contacts">Контакты</a>
                 </div>
-            </div> -->
+                <div class="js-burger-btn burger-btn"></div>
+            </div>
+            <div class="js-burger burger">
+                <div class="js-burger-content burger__content">
+                    <div class="burger-menu__logo">
+                        <img src="img/Метрика.svg" alt="">
+                    </div>
+                    <div class="burger-menu__nav tag">
+                        <a href="#intro">О нас</a>
+                        <a href="#projects">Проекты</a>
+                        <a href="#services">Услуги</a>
+                        <a href="#contacts">Контакты</a>
+                    </div>
+                </div>
+            </div>-->
             <div class="menu__info">
                 <h1 class="text-h1 menu__info-h1">Современные и стильные интерьеры для комфортной жизни</h1>
                 <div class="menu__info-img">
@@ -146,7 +160,27 @@
                 </div>
             </div>
             <div class="services__orden">
-                <button class="services__orden-button button text-h3">Заказать услугу</button>
+                <button class="services__orden-button button text-h3 js-btn">Заказать услугу</button>
+            </div>
+            <div class="js-popup popup">
+                <div class="js-popup__content popup__content">
+                    <p class="popup__title">Заказать услугу</p>
+                    <p class="popup__subtitle">Заполните форму, мы свяжемся с вами в течение суток</p>
+                    <div class="js-popup__close-btn popup__btn-close"></div>
+                    <input 
+                        class="popup_input"
+                        type="text"
+                        placeholder="Имя">
+                    <input 
+                        class="popup_input"
+                        type="email"
+                        placeholder="Электронная почта">
+                    <input 
+                        class="popup_input"
+                        type="tel"
+                        placeholder="Номер телефона">
+                    <button class="popup_btn-send">Отправить</button>
+                </div>
             </div>
         </div>
     </section>
@@ -270,6 +304,7 @@
         </div>
     </footer>
 <script src="gallery.js"></script>
+<script src="popup.js"></script>
 </body>
 
 </html>

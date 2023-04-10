@@ -18,6 +18,9 @@ body {
     font-weight: 400;
     letter-spacing: -0.03em;
 }
+.body_fixed {
+    overflow: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -54,7 +57,8 @@ a {
     --dark-color: #121212;
     --white-color: #fff;
 }
-button {
+button, 
+input {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
