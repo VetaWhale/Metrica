@@ -79,21 +79,23 @@
   }
   .gallery__title-wrapper {
     top: 80px;
-    left: 35px;
   }
   .gallery__title {
+    margin-left: 35px;
     font-size: 20px;
     line-height: 27px;
   }
   .gallery__controls-wrapper {
     bottom: 155px;
-    left: 35px;
+  }
+  .gallery__controls {
+    margin-left: 35px;
   }
   .gallery__text-wrapper {
     bottom: 80px;
-    left: 35px;
   }
   .gallery__text {
+    margin-left: 35px;
     font-size: 25px;
     line-height: 34px;
   }
