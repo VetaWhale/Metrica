@@ -121,10 +121,10 @@
   }
   .gallery__control-prev,
   .gallery__control-next {
-  width: 15px;
-  height: 25px;
-  background: url(../img/gallery-arrow-mobile.svg) no-repeat;
-}
+    width: 15px;
+    height: 25px;
+    background: url(../img/gallery-arrow-mobile.svg) no-repeat;
+  }
   .gallery__text-wrapper {
     bottom: 60px;
     left: 0;

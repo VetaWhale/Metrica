@@ -45,7 +45,7 @@
                             <a href="tel:+79358954535">+7 935 895-45-35</a>
                         </div>
                         <div class="burger-menu__contacts-email">
-                            <a href="mailto:hello@mail.com">hello@mail.com</a>
+                            <a href="https://t.me/VetaWhale">@VetaWhale</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,9 @@
             <p class="text-h2 intro__text">Студия основана в 2011 году. Полностью отдаемся проектированию и реализации
                 интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные
                 решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</h2>
-                <button class="intro__button">Посмотреть услуги</button>
+                <a  
+                    class="intro__button"
+                href="#services">Посмотреть услуги</a>
         </div>
     </section>
     <section class="projects" id="projects">
@@ -122,9 +124,9 @@
                 <p class="text-h3 projects__card-name">ЖК Сосновские озера — 94 М² — 2022</p>
                 <a class="projects__card-link" href="">Подробнее &rarr;</a>
             </div>
-            <div class="projects__open">
-                <button class="projects__open-button button text-h3">Смотреть все проекты</button>
-            </div>
+            <a
+                class="button"
+                href="#gallery">Смотреть все проекты</a>
         </div>
     </section>
     <section class="services" id="services">
@@ -169,7 +171,7 @@
                 </div>
             </div>
             <div class="services__orden">
-                <button class="services__orden-button button text-h3 js-btn">Заказать услугу</button>
+                <button class="button button_inverted services__orden-button js-btn">Заказать услугу</button>
             </div>
             <div class="js-popup popup">
                 <div class="js-popup__content popup__content">
@@ -179,16 +181,19 @@
                     <input 
                         class="popup_input"
                         type="text"
+                        name="name"
                         placeholder="Имя">
                     <input 
                         class="popup_input"
                         type="email"
+                        name="email"
                         placeholder="Электронная почта">
                     <input 
                         class="popup_input"
                         type="tel"
+                        name="phone"
                         placeholder="Номер телефона">
-                    <button class="popup_btn-send">Отправить</button>
+                    <button class="button button_inverted button_small popup_btn-send">Отправить</button>
                 </div>
             </div>
         </div>
@@ -236,7 +241,7 @@
             </div>
         </section>
     </div>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery__title-wrapper">
             <div class="container">
                 <p class="gallery__title">Галерея проектов</p>

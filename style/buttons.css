@@ -1,0 +1,46 @@
+button,
+input {
+  font-family: inherit;
+  cursor: pointer;
+}
+.button {
+  display: block;
+  width: 100%;
+  line-height: 150px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--accent-color);
+  background-color: #fff;
+  font-size: 30px;
+}
+.button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.button_inverted {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.button_inverted:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+.button_small {
+  font-size: 20px;
+  line-height: 64px;
+}
+
+/* Адаптив для кнопок*/
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 767px) {
+  .button {
+    border-radius: 3.8px;
+  }
+  .button {
+    font-size: 22px;
+    line-height: 97px;
+  }
+}
