@@ -2,6 +2,7 @@ button,
 input {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 .button {
   display: block;
