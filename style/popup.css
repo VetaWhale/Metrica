@@ -17,10 +17,7 @@
   visibility: visible;
 }
 .popup__content {
-  padding-top: 94px;
-  padding-bottom: 86px;
-  padding-left: 55px;
-  padding-right: 75px;
+  padding: 94px 86px 55px 75px;
   position: relative;
   width: 645px;
   max-height: 100%;
@@ -28,6 +25,11 @@
   background-color: #fff;
   border-radius: 10px;
   color: var(--dark-color);
+  transition: transform 0.2s linear;
+  transform: translateY(100%);
+}
+.popup_open .popup__content {
+  transform: translateY(0);
 }
 .popup__title {
   font-size: 45px;

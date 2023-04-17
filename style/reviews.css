@@ -1,7 +1,7 @@
 /* Стили для блока отзывы */
 .reviews {
   padding-top: 150px;
-  padding-bottom: 158px;
+  padding-bottom: 150px;
 }
 .reviews__tag {
   margin-bottom: 30px;
@@ -16,7 +16,7 @@
   width: calc(50% - 25px);
 }
 .reviews__card:last-child:nth-child(2n + 1) {
-  width: calc(50% + 25%);
+  width: 75%;
 }
 .reviews__card-title {
   margin-bottom: 14px;
@@ -31,7 +31,7 @@
 @media only screen and (max-width: 1199px) {
   .reviews {
     padding-top: 117px;
-    padding-bottom: 120px;
+    padding-bottom: 125px;
   }
   .reviews__cards-grid {
     row-gap: 52px;
@@ -52,7 +52,7 @@
 @media only screen and (max-width: 767px) {
   .reviews {
     padding-top: 81px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
   .reviews__tag {
     margin-bottom: 22px;

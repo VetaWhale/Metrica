@@ -18,28 +18,54 @@
         <div class="container">
            <div class="menu">
                 <div class="menu__logo">
-                    <img src="img/logo.svg" alt="Метрика">
+                    <picture>
+                        <source
+                             media="(max-width: 500px)"
+                            srcset="img/logo-mobile.svg"
+                        />
+                        <img src="img/logo.svg" alt="Метрика">
+                    </picture>
                 </div>
-                <div class="menu__nav tag">
-                    <a href="#intro">О нас</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#contacts">Контакты</a>
-                </div>
-                <div class="js-burger-btn burger-btn"></div>
+                <nav class="menu__nav">
+                    <ul class="nav__list tag">
+                        <li>
+                            <a class="nav__link" href="#intro">О нас</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#services">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="js-burger-btn burger-btn"></button>
             </div>
             <div class="js-burger burger">
-                <div class="js-burger__content burger__content">
+                <div class="burger__content">
                     <div class="burger-menu__logo">
-                        <img src="img/logo-burger.svg" alt="">
+                        <img src="img/logo-burger.svg" alt="логотип Метрика">
                     </div>
-                    <div class="burger-menu__nav tag">
-                        <a href="#intro">О нас</a>
-                        <a href="#projects">Проекты</a>
-                        <a href="#services">Услуги</a>
-                        <a href="#contacts">Контакты</a>
-                    </div>
-                    <div class="burger-menu__contacts">
+                    <nav class="burger-menu__nav">
+                        <ul class="burger__nav-list tag">
+                            <li>
+                                <a class="burger__nav-link" href="#intro">О нас</a>
+                            </li>
+                            <li>
+                                <a class="burger__nav-link" href="#projects">Проекты</a>
+                            </li>
+                            <li>
+                                <a class="burger__nav-link" href="#services">Услуги</a>
+                            </li>
+                            <li>
+                                <a class="burger__nav-link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="js-burger__content burger-menu__contacts">
                         <p class="burger-menu__contacts-title">для связи:</p>
                         <div class="burger-menu__contacts-number">
                             <a href="tel:+79358954535">+7 935 895-45-35</a>
@@ -125,7 +151,7 @@
                 <a class="projects__card-link" href="">Подробнее &rarr;</a>
             </div>
             <a
-                class="button"
+                class="button projects__button"
                 href="#gallery">Смотреть все проекты</a>
         </div>
     </section>
@@ -306,12 +332,22 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__nav tag">
-                    <a href="#intro">О нас</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#contacts">Контакты</a>
-                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list tag">
+                        <li>
+                            <a class="footer__nav-link" href="#intro">О нас</a>
+                        </li>
+                        <li>
+                            <a class="footer__nav-link" href="#projects">Проекты</a>
+                        </li>
+                        <li>
+                            <a class="footer__nav-link" href="#services">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="footer__nav-link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
             </div>
         </div>

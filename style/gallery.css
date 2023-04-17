@@ -105,12 +105,13 @@
     height: 408px;
   }
   .gallery__title-wrapper {
-    top: 61px;
+    top: 60px;
     left: 0;
   }
   .gallery__title {
     font-size: 14px;
     line-height: 19px;
+    margin-left: 0;
   }
   .gallery__controls-wrapper {
     bottom: 47%;
@@ -118,6 +119,7 @@
   }
   .gallery__controls {
     justify-content: space-between;
+    margin-left: 0;
   }
   .gallery__control-prev,
   .gallery__control-next {
@@ -130,6 +132,7 @@
     left: 0;
   }
   .gallery__text {
+    margin-left: 0;
     max-width: 265px;
     font-size: 19px;
     line-height: 26px;
