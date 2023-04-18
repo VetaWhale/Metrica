@@ -95,6 +95,7 @@
     bottom: 80px;
   }
   .gallery__text {
+    max-width: 377px;
     margin-left: 35px;
     font-size: 25px;
     line-height: 34px;
