@@ -224,6 +224,177 @@
             </div>
         </div>
     </section>
+    <section class="calculate">
+        <div class="container">
+            <h2 class="calculate-title">Калькулятор стоимости ремонта</h2>
+            <div class="calculate-wrapper">
+                <div class="calculate-col1">
+                <div class="calculate-line"></div>
+                <div class="calculate-footage">
+                    <div class="calculate-footage__name-parameter">
+                        <p>выберите тип помещения</p>
+                        <p>укажите метраж помещения</p>
+                    </div>
+                    <div class="calculate-footage__options">
+                         <select class="calculate-footage__options_type" name="" id="">
+                            <option class="tariff" id="apartment" value="1000">квартира</option>
+                            <option class="tariff" id="home" value="2000">дом</option>
+                        </select>
+                        <div class="range">
+                            <div class="range-value">
+                                <output class="range-value_amount" for="range-slider" id="range-value">0</output>
+                                <p>м&sup2</p>
+                            </div>
+                            <input type="range" class="range-slider js-range-slider" id="range-slider" min="0" max="300" step="1" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculate-line"></div>
+                <div class="calculate__project-composition">
+                    <p class="project-composition__title calculate-head">Состав дизайн-проекта</p> 
+                    <ul class="project-composition-wrapper">
+                        <li class="project-composition__content">
+                            <p class="project-composition__content_name text-h3">планировочные решения</p>
+                            <div class="counter" data-counter>
+                                <button class="js-counter-minus counter-button_disabled counter-button">-</button>
+                                <input type="text" class="counter-amount" id="counter-input" value="0" disabled>
+                                <button class="js-counter-plus counter-button">+</button>
+                            </div>
+                        </li>
+                        <li class="project-composition__content">
+                            <p class="project-composition__content_name text-h3">варианты чертежей</p>
+                            <div class="counter" data-counter>
+                                <button class="js-counter-minus counter-button_disabled counter-button">-</button>
+                                <input type="text" class="counter-amount" id="counter-input" value="0" disabled>
+                                <button class="js-counter-plus counter-button">+</button>
+                            </div>
+                        </li>
+                        <li class="project-composition__content">
+                            <p class="project-composition__content_name text-h3">варианты визуализаций</p>
+                            <div class="counter" data-counter>
+                                <button class="js-counter-minus counter-button_disabled counter-button">-</button>
+                                <input type="text" class="counter-amount" id="counter-input" value="0" disabled>
+                                <button class="js-counter-plus counter-button">+</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate-line"></div>
+                <div class="calculate__tasks-project">
+                    <p class="tasks-project__title calculate-head">что понадобится в дизайн проекте</p>
+                    <ul class="tasks-project__list">
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">3D визуализация
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">чертежи (рабочая документация)
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">планировочное решение
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">ведомости (шопинг-лист)
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">товары со скидкой
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">смета на ремонт
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="task-project" data-task>
+                            <label class="task-project__checkbox">мебель на заказ
+                                <input class="task-project__real-checkbox" type="checkbox">
+                                <span class="task-project__active-checkbox"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculate-line"></div>
+                <div class="calculate__extra-servises">
+                    <p class="extra-servises__title calculate-head">дополнительные услуги</p>
+                    <p class="extra-servises__text text-p">оплачиваются отдельно и не входят в состав проекта</p>
+                    <ul class="extra-servises__list">
+                        <li class="extra-servis" data-extra>
+                            <label class="extra-servis__wrapper" id="option1">
+                                <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="30000" type="checkbox">
+                                <span class="extra-servis__checkbox"></span>
+                                умный дом</label>
+                                <span class="extra-servis__price">30 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper" id="option2">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="20000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            технический надзор</label>
+                            <span class="extra-servis__price">20 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="25000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            авторский надзор</label>
+                            <span class="extra-servis__price">25 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="4000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            3D тур по визуализациям проекта</label>
+                            <span class="extra-servis__price">4 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="20000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            дизайн-проект дополнительного помещения</label>
+                            <span class="extra-servis__price">20 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="10000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            дизайн-проект лоджии</label>
+                            <span class="extra-servis__price">10 000 &#8381</span>
+                        </li>
+                        <li class="extra-servis">
+                            <label class="extra-servis__wrapper">
+                            <input class="extra-servis__real-checkbox" id="extra-servis-checkbox" value="10000" type="checkbox">
+                            <span class="extra-servis__checkbox"></span>
+                            дизайн-проект гардеробной комнаты</label>
+                            <span class="extra-servis__price">10 000 &#8381</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="calculate-col2">
+                    <p class="tag">Стоимость проекта</p>
+                    <p class="js-sum calculate__sum text-h1">0</p>
+                    <p class="calculate__price text-h3">1000 &#8381/м&sup2</p>
+                    <p class="calculate__deadline text-p">35-45 дней</p>
+                    <button class="js-button-order calculate__button-order button button_inverted">Заказать проект</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
     <div class="container">
         <section class="reviews">
             <h2 class="reviews__tag tag">Отзывы</h2>
@@ -354,6 +525,7 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>

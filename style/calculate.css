@@ -1,0 +1,138 @@
+select,
+option {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 41px;
+}
+select {
+}
+select:after {
+}
+.calculate {
+  padding-top: 150px;
+  font-size: 30px;
+  line-height: 41px;
+}
+.calculate-wrapper {
+  display: flex;
+}
+.calculate-col1 {
+  width: calc(75% - 5px);
+}
+.calculate-title {
+  margin-bottom: 60px;
+  font-size: 45px;
+  line-height: 61px;
+}
+.calculate-line {
+  width: 100%;
+  opacity: 0.4;
+  border: 1px solid #121212;
+}
+.calculate-footage {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.calculate-footage__name-parameter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 62px;
+}
+.calculate-footage__options {
+}
+.calculate-footage__options_type {
+  appearance: none;
+  border: none;
+  position: relative;
+  outline: none;
+  padding: 5px;
+  padding-right: 40px;
+  background: url(../img/Union.png) no-repeat right center;
+}
+.range {
+  margin-top: 55px;
+  color: var(--accent-color);
+}
+.range-value {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+.range-value_amount {
+}
+.range-slider {
+}
+.calculate-col2 {
+  padding: 24px;
+  margin-left: 13px;
+  width: calc(25%);
+  max-height: 410px;
+  position: sticky;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+.calculate__sum {
+  margin-top: 10px;
+}
+.calculate__price {
+  margin-top: 5px;
+}
+.calculate__deadline {
+  margin-top: 105px;
+}
+.calculate__button-order {
+  margin-top: 10px;
+  line-height: 67px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.calculate-head {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+.calculate__project-composition {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.project-composition__title {
+}
+.project-composition-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.project-composition__content {
+  display: flex;
+  justify-content: space-between;
+}
+.project-composition__content_name {
+}
+.counter {
+  margin-right: 200px;
+  display: flex;
+  gap: 10px;
+  color: var(--accent-color);
+}
+.counter-button {
+  text-decoration: none;
+  color: var(--accent-color);
+  background-color: #fff;
+  font-size: 30px;
+}
+.counter-button_disabled {
+    opacity: 0.5;
+}
+.counter-amount {
+    border: none;
+    background-color: #fff;
+    color: var(--accent-color);
+    font: inherit;
+    max-width: 35px;
+    text-align: center;
+}

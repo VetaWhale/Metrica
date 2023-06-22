@@ -1,0 +1,60 @@
+.calculate__extra-servises {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.extra-servises__title {
+  margin-bottom: 20px;
+}
+.extra-servises__text {
+}
+.extra-servises__list {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.extra-servis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra-servis__wrapper {
+}
+.extra-servis__real-checkbox {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.extra-servis__checkbox {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  vertical-align: sub;
+  margin-right: 20px;
+}
+.extra-servis__price {
+  color: var(--accent-color);
+}
+.extra-servis__checkbox::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: url("../img/checkbox-extra.svg") center / 70% no-repeat, var(--accent-color);
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.1s ease-in;
+}
+.extra-servis__real-checkbox:checked + .extra-servis__checkbox::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
