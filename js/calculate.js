@@ -51,7 +51,9 @@ counters.forEach((counter) => {
   counter.addEventListener("click", (e) => {
     const target = e.target;
 
-    if (target.closest(".counter")) {
+    if (!target.closest(".counter")) {
+      return
+    } else {
       let value = parseInt(
         target.closest(".counter").querySelector("input").value
       );
