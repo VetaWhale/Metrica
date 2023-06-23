@@ -1,3 +1,5 @@
+const INITIAL_PRICE = 1000;
+
 const footageNode = document.querySelector(".js-range-slider");
 const footageTextNode = document.querySelector(".range-value_amount");
 const totalNode = document.querySelector(".js-sum");
@@ -10,8 +12,9 @@ const extraServisCheckbox = document.querySelectorAll("#extra-servis-checkbox");
 const counters = document.querySelectorAll("[data-counter]");
 const tasks = document.querySelectorAll("[data-task]");
 
-let basePrice = 1000;
+let basePrice = INITIAL_PRICE;
 
+// ФУНКЦИИ
 function changeTariff() {
     for (const tariff of tariffNode) {
     if (tariff.selected) {
@@ -26,8 +29,6 @@ function footageUpdate() {
   footageTextNode.value = footageNode.value;
 }
 
-footageNode.addEventListener("input", footageUpdate);
-
 function calculate() {
   let totalPrice = basePrice * footageNode.value;
 
@@ -39,17 +40,8 @@ function calculate() {
   totalNode.innerText = totalPrice;
 }
 
- tariff.addEventListener('change', changeTariff);
-
-for (const input of inputs) {
-  input.addEventListener('input', function () {
-    calculate();
-  });
-}
-
-counters.forEach((counter) => {
-  counter.addEventListener("click", (e) => {
-    const target = e.target;
+function doActionForCounter(e) {
+  const target = e.target;
 
     if (!target.closest(".counter")) {
       return
@@ -92,13 +84,28 @@ counters.forEach((counter) => {
 
       target.closest(".counter").querySelector("input").value = value;
     }
-  });
+  }
+
+
+function addClassTask(elem) {
+  const target = elem.target;
+
+  target.classList.toggle("task-project_checked");
+}
+
+// ОБРАБОТЧИКИ СОБЫТИЙ
+tariff.addEventListener('change', changeTariff);
+
+for (const input of inputs) {
+  input.addEventListener('input', calculate);
+}
+
+counters.forEach((counter) => {
+  counter.addEventListener("click", doActionForCounter);
 });
 
-tasks.forEach((task) => {
-  task.addEventListener("click", (elem) => {
-    const target = elem.target;
+footageNode.addEventListener("input", footageUpdate);
 
-    target.classList.toggle("task-project_checked");
-  });
+tasks.forEach((task) => {
+  task.addEventListener("click", addClassTask);
 });
