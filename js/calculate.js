@@ -3,8 +3,8 @@ const INITIAL_PRICE = 1000;
 const footageNode = document.querySelector(".js-range-slider");
 const footageTextNode = document.querySelector(".range-value_amount");
 const totalNode = document.querySelector(".js-sum");
-const priceTextNode = document.querySelector('.calculate__price');
-const tariff = document.querySelector('select');
+const priceTextNode = document.querySelector(".calculate__price");
+const tariff = document.querySelector("select");
 const tariffNode = document.querySelectorAll(".tariff");
 const inputs = document.querySelectorAll("input");
 const extraServisCheckbox = document.querySelectorAll("#extra-servis-checkbox");
@@ -16,13 +16,13 @@ let basePrice = INITIAL_PRICE;
 
 // ФУНКЦИИ
 function changeTariff() {
-    for (const tariff of tariffNode) {
+  for (const tariff of tariffNode) {
     if (tariff.selected) {
       basePrice = parseInt(tariff.value);
     }
   }
   priceTextNode.innerText = `${basePrice} ₽/м2`;
-  calculate()
+  calculate();
 }
 
 function footageUpdate() {
@@ -43,49 +43,44 @@ function calculate() {
 function doActionForCounter(e) {
   const target = e.target;
 
-    if (!target.closest(".counter")) {
-      return
-    } else {
-      let value = parseInt(
-        target.closest(".counter").querySelector("input").value
-      );
+  if (!target.closest(".counter")) return;
 
-      if (target.classList.contains("js-counter-plus")) {
-        value++;
-      } else {
-        value--;
-      }
+  let value = parseInt(target.closest(".counter").querySelector("input").value);
 
-      if (value <= 0) {
-        value = 0;
-        target
-          .closest(".counter")
-          .querySelector(".js-counter-minus")
-          .classList.add("counter-button_disabled");
-      } else {
-        target
-          .closest(".counter")
-          .querySelector(".js-counter-minus")
-          .classList.remove("counter-button_disabled");
-      }
-
-      if (value >= 10) {
-        value = 10;
-        target
-          .closest(".counter")
-          .querySelector(".js-counter-plus")
-          .classList.add("counter-button_disabled");
-      } else {
-        target
-          .closest(".counter")
-          .querySelector(".js-counter-plus")
-          .classList.remove("counter-button_disabled");
-      }
-
-      target.closest(".counter").querySelector("input").value = value;
-    }
+  if (target.classList.contains("js-counter-plus")) {
+    value++;
+  } else {
+    value--;
   }
 
+  if (value <= 0) {
+    value = 0;
+    target
+      .closest(".counter")
+      .querySelector(".js-counter-minus")
+      .classList.add("counter-button_disabled");
+  } else {
+    target
+      .closest(".counter")
+      .querySelector(".js-counter-minus")
+      .classList.remove("counter-button_disabled");
+  }
+
+  if (value >= 10) {
+    value = 10;
+    target
+      .closest(".counter")
+      .querySelector(".js-counter-plus")
+      .classList.add("counter-button_disabled");
+  } else {
+    target
+      .closest(".counter")
+      .querySelector(".js-counter-plus")
+      .classList.remove("counter-button_disabled");
+  }
+
+  target.closest(".counter").querySelector("input").value = value;
+}
 
 function addClassTask(elem) {
   const target = elem.target;
@@ -94,10 +89,10 @@ function addClassTask(elem) {
 }
 
 // ОБРАБОТЧИКИ СОБЫТИЙ
-tariff.addEventListener('change', changeTariff);
+tariff.addEventListener("change", changeTariff);
 
 for (const input of inputs) {
-  input.addEventListener('input', calculate);
+  input.addEventListener("input", calculate);
 }
 
 counters.forEach((counter) => {
