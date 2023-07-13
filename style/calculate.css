@@ -71,7 +71,7 @@ select:after {
   padding: 24px;
   margin-left: 13px;
   width: calc(25%);
-  max-height: 410px;
+  max-height: 450px;
   position: sticky;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -137,4 +137,24 @@ select:after {
     font: inherit;
     max-width: 35px;
     text-align: center;
+}
+
+@media only screen and (max-width: 915px) {
+  .calculate__button-order{
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .calculate-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .calculate-col1,
+  .calculate-col2 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .calculate__deadline {
+    margin-top: 50px;
+  }
 }
